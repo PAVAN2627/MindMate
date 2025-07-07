@@ -24,8 +24,8 @@ function sendOTP(string $toEmail, string $toName, string $otp): bool
         $mail->Host       = 'smtp.gmail.com';   // e.g. smtp.gmail.com or smtp.office365.com
         $mail->Port       = 587;
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'pavanmalith3@gmail.com';   // <-- your SMTP username
-        $mail->Password   = 'qsqa drxj xflr ergx';        // <-- your SMTP password or app password
+        $mail->Username   = '';   // <-- your SMTP username
+        $mail->Password   = 'x';        // <-- your SMTP password or app password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; 
 
         /* Message */
@@ -52,8 +52,8 @@ function sendEmail(string $to, string $toName, string $subject, string $body): b
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'pavanmalith3@gmail.com';
-        $mail->Password   = 'qsqa drxj xflr ergx';          // Gmail app‑password
+        $mail->Username   = '';
+        $mail->Password   = '';          // Gmail app‑password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587;
 
