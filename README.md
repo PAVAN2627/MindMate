@@ -40,3 +40,4 @@ MindMate is a web-based mental health companion that helps users track their emo
 ```bash
 git clone https://github.com/your-username/mindmate.git
 cd mindmate
+
