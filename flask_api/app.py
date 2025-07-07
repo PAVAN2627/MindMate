@@ -5,14 +5,14 @@ from openai import AzureOpenAI          # new SDK (≥ 1.0.0)
 app = Flask(__name__)
 
 # ── Azure Text Analytics (sentiment) ───────────────────────────
-AZURE_TA_ENDPOINT = "https://mindmate0281.cognitiveservices.azure.com/"
-AZURE_TA_KEY      = "4LMsr8f0tH9ok9bazYRcOvvAtvia7UfBUzP8UFaAIks4UDZoI4pAJQQJ99BGACYeBjFXJ3w3AAAaACOGcLgY"
+AZURE_TA_ENDPOINT = "ENDPOINT/"
+AZURE_TA_KEY      = "KEY"
 
 # ── Azure OpenAI config (new SDK) ──────────────────────────────
-AZURE_OPENAI_ENDPOINT   = "https://pavan-mc0k5way-eastus2.cognitiveservices.azure.com/"
-AZURE_OPENAI_KEY        = "9CkC9rlJmLiWj5HcAxzOlhPpSE4sCQtCNZrtYqPWIfbGAc6AdQGnJQQJ99BFACHYHv6XJ3w3AAAAACOGVPBZ"
+AZURE_OPENAI_ENDPOINT   = "/"
+AZURE_OPENAI_KEY        = ""
 AZURE_OPENAI_API_VERSION = "2024-12-01-preview"
-AZURE_OPENAI_DEPLOYMENT  = "gpt-35-turbo"     # ← exact deployment name
+AZURE_OPENAI_DEPLOYMENT  = ""     # ← exact deployment name
 
 client = AzureOpenAI(
     api_key       = AZURE_OPENAI_KEY,
